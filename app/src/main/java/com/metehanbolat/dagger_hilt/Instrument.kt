@@ -1,4 +1,6 @@
 package com.metehanbolat.dagger_hilt
 
-class Instrument {
+import javax.inject.Inject
+
+class Instrument @Inject constructor() {
 }

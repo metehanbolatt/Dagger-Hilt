@@ -1,10 +1,12 @@
 package com.metehanbolat.dagger_hilt
 
-class Musician(
-    instrument: Instrument,
-    band: Band
-) {
+import javax.inject.Inject
+
+// Constructor injection
+class Musician @Inject constructor(instrument: Instrument, band: Band) {
+
     fun sign(){
         println("Working")
     }
+
 }
