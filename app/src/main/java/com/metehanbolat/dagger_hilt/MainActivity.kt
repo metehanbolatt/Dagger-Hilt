@@ -2,6 +2,7 @@ package com.metehanbolat.dagger_hilt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -27,4 +28,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+}
+
+@AndroidEntryPoint
+class FragmentExample() : Fragment(){
+    @Inject
+    lateinit var kirk : Musician
 }
