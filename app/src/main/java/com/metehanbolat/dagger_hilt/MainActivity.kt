@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         lars.sign()
 
-        myClass.myFunction()
+        println(myClass.myFunction())
+        println(myClass.secondFunction())
 
     }
 
